@@ -15,3 +15,8 @@ Program itself can do lots of basic things, using command "help" when you run it
 you can use. All functions are currently stored in _User_cmd.hpp_ and they are stored in a namespace so you
 can easily declare/define new ones. Cool thing you can add: make the program automatically recognize math expressions
 and print out the answer!
+
+# Current known bugs
+
+- Command "ls" will crash the program when trying to list out directories within a non-existent path. Will add a check when
+I grab some time.
