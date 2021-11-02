@@ -22,4 +22,3 @@ and print out the answer!
 I grab some time.
 - Currently only BMP files are being rendered in terminal, you will need to add BMP conversion functions to actually render other
 file types. External libraries are not allowed for this project (college rules yaaay) so either write a conversion library.
-- Log system is included into this project but it is not implemented, log whatever you want, wherever you want.
