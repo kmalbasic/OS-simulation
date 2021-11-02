@@ -2,6 +2,7 @@
 #include <string>
 #include "Boot.hpp"
 #include "Core.hpp"
+#include "Logs.hpp"
 
 int main()
 {
@@ -20,6 +21,9 @@ int main()
     std::cout << "OS - github.com/kmalbasic - 2021\n";
     cout << endl;
     cout << endl;
+
+    LOG log;
+
     if (boot())
         cout << "[~] Booted successfully with no errors." << endl;
     else {
@@ -37,9 +41,25 @@ int main()
 
     while (true) {
         display_current_statistics_title();
-
         string command;
-        cout << "OS1.0.0.0/root: $ ";
+        string path_on_input = "";
+        if (default_path != path) {
+            if (strlen(default_path.c_str()) < strlen(path.c_str())) {
+                int idx = strlen(default_path.c_str()) - strlen(path.c_str());
+                for (int i = strlen(default_path.c_str()) + 1; i < strlen(path.c_str()); i++) {
+                    path_on_input += path[i];
+                }
+                cout << "OS1.0.0.0/root/"+path_on_input+ " $ ";
+            }
+            else {
+                cout << "OS1.0.0.0/root $ ";
+            }
+        }
+        else {
+            cout << "OS1.0.0.0/root $ ";
+        }
+        
+       // cout << used_path_alt << endl;
         std::getline(std::cin >> std::ws, command);
 
         if (!recognize_cmd(command)) {
