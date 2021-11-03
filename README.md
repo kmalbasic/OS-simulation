@@ -28,3 +28,4 @@ directory which contains OS.exe is considered root)
 I grab some time.
 - Currently only BMP files are being rendered in terminal, you will need to add BMP conversion functions to actually render other
 file types. External libraries are not allowed for this project (college rules yaaay) so either write a conversion library.
+- **somewhat of a bug** "ls" will output blank directories/files if OS executable is not placed and ran in a folder named **OS**
