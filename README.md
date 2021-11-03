@@ -16,6 +16,12 @@ you can use. All functions are currently stored in _User_cmd.hpp_ and they are s
 can easily declare/define new ones. Cool thing you can add: make the program automatically recognize math expressions
 and print out the answer!
 
+# How to use it?
+Place the OS into a folder named OS. The OS will probably ask you to create a new user account and simply run after you
+create one. Type in "_help_" and select what command you want to run! (big sorry for everyone having issues with "_ls_"
+printing out blank directories and files, reason being the way OS sees the files (OS folder is meant to simulate a disk,
+directory which contains OS.exe is considered root)
+
 # Current known bugs
 
 - Command "ls" will crash the program when trying to list out directories within a non-existent path. Will add a check when
