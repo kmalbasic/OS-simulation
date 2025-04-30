@@ -1,0 +1,17 @@
+*.youtube.com
+*.ytimg.com
+*.pandasoftware.com
+*.pandasecurity.com
+*.speedtest.net
+*.testmy.net
+*.googlevideo.com
+youtube.com
+ytimg.com
+pandasoftware.com
+pandasecurity.com
+speedtest.net
+testmy.net
+googlevideo.com
+example.com
+*.example.com
+*.google.com
