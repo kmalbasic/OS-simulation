@@ -19,3 +19,4 @@
 *.public-trust.com
 *.iana.org
 *.tenable.com
+*.watchguard.com
