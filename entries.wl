@@ -21,3 +21,4 @@
 *.tenable.com
 *.watchguard.com
 *.httpbin.org
+*.forcepoint.com
