@@ -20,3 +20,4 @@
 *.iana.org
 *.tenable.com
 *.watchguard.com
+*.httpbin.org
